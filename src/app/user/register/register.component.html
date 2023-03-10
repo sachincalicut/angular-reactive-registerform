@@ -1,0 +1,65 @@
+<form [formGroup]="registerForm" (ngSubmit)="registerPass()" class="rounded-3">
+    <div class="row g-0">
+      
+            <div class="col text-center">
+                <span class="screen-title">Sign Up</span>
+                <div class="screen-status">Come Join our team. Lets setup your account</div>
+            </div>
+        
+       
+    </div>
+    <div class="row">
+        <div class="col mb-3 ">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstname" formControlName="firstname">
+        </div>
+        <div class="col mb-3">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastname" formControlName="lastname">
+        </div>
+    </div>
+   <div class="row">
+        <div class="col mb-3">
+            <label for="email" class="form-label">Email ID</label>
+            <input type="text" class="form-control" id="email" formControlName="email">
+            <div class="form-text"></div>
+        </div>
+   </div>
+   <div class="row">
+    <div class="col mb-3">
+        <label for="mobile" class="form-label">Mobile No</label>
+        <input type="text" class="form-control" id="mobile" formControlName="mobile">
+        <div class="form-text"></div>
+    </div>
+    <div class="col ps-3 mb-3">
+        <div class="m-1 form-label">Gender</div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" value="m" id="male" formControlName="gender">
+            <label for="male" class="form-check-label">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" value="f" id="female" formControlName="gender">
+            <label for="female" class="form-check-label">Female</label>
+        </div>
+    </div>
+   </div>
+   <div class="row">
+        <div class="col mb-3">
+            <label for="pwd" class="form-label">Password</label>
+            <input type="password" class="form-control" id="pwd" formControlName="pwd">
+            <div class="form-text"></div>
+        </div>
+        <div class="col mb-3">
+            <label for="cpwd" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cpwd" formControlName="cpwd">
+            <div class="form-text"></div>
+        </div>
+   </div>
+   <div class="row">
+        <div class="col">
+            <div class="d-grid mt-4">
+                <button type="submit" class="btn btn-success">Create an Account</button>
+            </div>
+        </div>
+   </div>
+</form>

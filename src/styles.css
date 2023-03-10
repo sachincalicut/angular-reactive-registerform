@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin-top:60px;
+}
+form{
+    width:500px;
+    margin:0 auto;
+}
+.form-label,
+.form-check-label{
+    font-size: 13px;
+}
+.screen-title{
+    font-size: 30px;
+    display: block;
+    margin-bottom: 18px;
+}
+.screen-status{
+    font-size: 14px;
+    margin-bottom: 40px;
+}
